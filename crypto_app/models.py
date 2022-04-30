@@ -42,3 +42,4 @@ class Transactions(models.Model):
     
     def __str__(self):
         return "Transaction " + str(self.user) + " " + str(self.value)
+

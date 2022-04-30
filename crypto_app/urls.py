@@ -1,3 +1,4 @@
+
 """crypto_carbon_footprint URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -16,9 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from crypto_app.views import mehdi
+from crypto_app.views import index, sign_in
 
 urlpatterns = [
+
     path('', mehdi),
     path('accounts/', include("django.contrib.auth.urls")),
+    path('home/', index),
+    path('sign-in/', sign_in)
+
 ]
