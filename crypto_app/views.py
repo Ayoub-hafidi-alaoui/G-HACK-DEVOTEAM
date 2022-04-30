@@ -4,5 +4,8 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def mehdi(request):
-    return HttpResponse("mehdi")
+def index(request):
+    return render(request, 'index.html');
+
+def sign_in(request):
+    return render(request, 'sign-in.html')
